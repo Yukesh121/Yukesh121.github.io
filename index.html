@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Yukesh's First Website</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://github.com/Yukesh121/Yukesh.me/blob/main/Background.jpg?raw=true');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+            backdrop-filter: blur(5px);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            animation: slideIn 1s ease forwards, techyAnimation 1s ease forwards;
+            opacity: 0;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin-top: 10px;
+            animation: slideIn 1.5s ease forwards, techyAnimation 1s ease forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes techyAnimation {
+            0% {
+                transform: scale(0.8);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 3.5em;
+            }
+            p {
+                font-size: 2em;
+            }
+            .container {
+                padding: 15px; 
+            }
+        }
+
+        @media (max-width: 400px) {
+            h1 {
+                font-size: 3em;
+            }
+            p {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Yukesh's First Website</h1>
+        <p>Currently under Heavy Development</p>
+    </div>
+</body>
+</html>
