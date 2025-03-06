@@ -14,9 +14,22 @@
             background-image: url('https://github.com/Yukesh121/Yukesh121.github.io/blob/main/Background.jpg?raw=true');
             background-size: cover;
             background-position: center;
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             color: white;
             overflow: hidden;
+            position: relative;
+        }
+
+        
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
         }
 
         .container {
@@ -26,20 +39,24 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 2;
         }
 
         h1 {
-            font-size: 3em;
+            font-size: 5vw;
             margin: 0;
             animation: slideIn 1s ease forwards, techyAnimation 1s ease forwards;
             opacity: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
         }
 
         p {
-            font-size: 1.5em;
+            font-size: 3vw;
             margin-top: 10px;
             animation: slideIn 1.5s ease forwards, techyAnimation 1s ease forwards;
             opacity: 0;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); 
         }
 
         @keyframes fadeIn {
@@ -76,10 +93,10 @@
 
         @media (max-width: 600px) {
             h1 {
-                font-size: 3.5em;
+                font-size: 8vw; 
             }
             p {
-                font-size: 2em;
+                font-size: 5vw; 
             }
             .container {
                 padding: 15px; 
@@ -88,17 +105,17 @@
 
         @media (max-width: 400px) {
             h1 {
-                font-size: 3em;
+                font-size: 10vw; 
             }
             p {
-                font-size: 1.5em;
+                font-size: 6vw;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to Yukesh's First Website</h1>
+        <h1>Welcome to Yukesh's Website</h1>
         <p>Currently under Heavy Development!</p>
         <p>Huge Updates Coming Soon! Stay Tuned!😉</p>
     </div>
